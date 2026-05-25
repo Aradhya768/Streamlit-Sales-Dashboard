@@ -29,9 +29,8 @@ Cloud deployment
 Deep learning forecasting models
 Live API-based analytics
 AI recommendation engine
+
 Author
-
 Aradhya Sharma
+Aspiring Data Analytics
 
-Aspiring Data Scientist & AI Developer
-Focused on building intelligent business systems and modern AI-powered applications
