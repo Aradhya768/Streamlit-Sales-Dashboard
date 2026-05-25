@@ -31,6 +31,8 @@ Live API-based analytics
 AI recommendation engine
 
 Author
+
 Aradhya Sharma
+
 Aspiring Data Analytics
 
