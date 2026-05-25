@@ -1,0 +1,35 @@
+import streamlit as st
+import plotly.express as px
+
+from utils.data_loader import load_data
+
+df = load_data()
+
+# CSS
+with open("assets/style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+st.title("👥 Customer Insights")
+
+segment_sales = (
+    df.groupby("Segment")["Sales"]
+    .sum()
+    .reset_index()
+)
+
+fig = px.pie(
+    segment_sales,
+    names="Segment",
+    values="Sales",
+    title="Customer Segment Contribution"
+)
+
+fig.update_layout(
+    template="plotly_dark"
+)
+
+st.plotly_chart(fig, use_container_width=True)
+
+st.info("""
+Consumer segment contributes the highest share of total business revenue.
+""")
