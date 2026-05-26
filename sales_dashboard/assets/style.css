@@ -134,6 +134,4 @@ div[data-testid="metric-container"] [data-testid="stMetricValue"] {
 ::-webkit-scrollbar-track {
     background: #111827;
 }
-[data-testid="collapsedControl"] {
-    display: block !important;
-}
+
