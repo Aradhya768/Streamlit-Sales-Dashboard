@@ -1,14 +1,11 @@
 import streamlit as st
-import streamlit.components.v1 as components
-
-# ======================================================
-# PAGE CONFIG
-# ======================================================
 
 st.set_page_config(
     page_title="Sales Intelligence Dashboard",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
+import streamlit.components.v1 as components
 
 # ======================================================
 # CUSTOM CSS
