@@ -6,6 +6,7 @@ import streamlit as st
 from pathlib import Path
 import pandas as pd
 import plotly.express as px
+from utils.data_loader import load_data
 
 # =========================================================
 # PAGE CONFIG
@@ -15,16 +16,6 @@ st.set_page_config(
     page_title="Executive Dashboard",
     layout="wide"
 )
-
-# =========================================================
-# LOAD DATA
-# =========================================================
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-DATA_PATH = BASE_DIR / "data" / "superstore.csv"
-
-df = pd.read_csv(DATA_PATH, encoding="latin1")
-
 # =========================================================
 # DATA CLEANING
 # =========================================================
