@@ -19,3 +19,5 @@ def load_data():
     df["Year"] = df["Order Date"].dt.year
 
     return df
+
+  
