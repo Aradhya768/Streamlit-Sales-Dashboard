@@ -1,6 +1,5 @@
 import streamlit as st
 import plotly.express as px
-
 from utils.data_loader import load_data
 
 df = load_data()
@@ -9,7 +8,7 @@ df = load_data()
 with open("assets/style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.title("👥 Customer Insights")
+st.title("Customer Insights")
 
 segment_sales = (
     df.groupby("Segment")["Sales"]
