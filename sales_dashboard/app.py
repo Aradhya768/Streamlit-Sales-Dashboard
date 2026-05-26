@@ -13,16 +13,8 @@ import streamlit.components.v1 as components
 
 st.markdown("""
 <style>
-header {
-    visibility: hidden;
-}
-
-[data-testid="stToolbar"] {
-    display: none;
-}
-
-[data-testid="stDecoration"] {
-    display: none;
+header[data-testid="stHeader"] {
+    background: transparent;
 }
             
 .hero-title {
