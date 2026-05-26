@@ -26,6 +26,8 @@ html, body, [class*="css"] {
 section[data-testid="stSidebar"] {
     background-color: #111827;
     border-right: 1px solid #1F2937;
+    min-width: 260px !important;
+    max-width: 260px !important;
 }
 
 /* =========================
@@ -131,4 +133,7 @@ div[data-testid="metric-container"] [data-testid="stMetricValue"] {
 
 ::-webkit-scrollbar-track {
     background: #111827;
+}
+[data-testid="collapsedControl"] {
+    display: block !important;
 }
