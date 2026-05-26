@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from utils.data_loader import load_data
 
 # ======================================================
 # PAGE CONFIG
@@ -219,12 +220,7 @@ header {
 </style>
 """, unsafe_allow_html=True)
 
-# ======================================================
-# LOAD DATA
-# ======================================================
-
-df = pd.read_csv("data/superstore.csv", encoding="latin1")
-
+# =====================================================
 # ======================================================
 # CLEANING
 # ======================================================
