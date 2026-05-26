@@ -3,6 +3,7 @@
 # =========================================================
 
 import streamlit as st
+from pathlib import Path
 import pandas as pd
 import plotly.express as px
 
@@ -18,8 +19,11 @@ st.set_page_config(
 # =========================================================
 # LOAD DATA
 # =========================================================
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-df = pd.read_csv("data/superstore.csv", encoding="latin1")
+DATA_PATH = BASE_DIR / "data" / "superstore.csv"
+
+df = pd.read_csv(DATA_PATH, encoding="latin1")
 
 # =========================================================
 # DATA CLEANING
